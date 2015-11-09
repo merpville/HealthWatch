@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background-image: url("Images/bg.png");
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+a {
+    text-decoration: none;
+}
+#error {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #e5350d;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.option {
+    background-color: rgba(33, 33, 32, 0.80);
+    color: white;
+    font-size: 80px;
+    margin-bottom: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+.option:hover {
+    background-color: rgba(33, 33, 32, 0.30);
+}
+.input {
+    background-color: rgba(255, 249, 255, 0.50);
+    border: 0px solid;
+    border-radius: 0px;
+    display: inline-block;
+    font-size: 80px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 25px;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 249, 255, 0.50) inset;
+}
+.submit {
+    display: inline-block;
+    font-size: 80px;
+    height: 150px;
+    width: 100%;
+}
+#dashboard {
+    background-color: rgba(33, 33, 32, 0.80);
+    color: ghostwhite;
+    font-size: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#elderName {
+    font-size: 100px;
+}
+#status1 {
+    color: green;
+}
+#status2 {
+    color: orangered;
+}
+#status3 {
+    color: red;
+}
+#timestamp {
+    font-size: 60px;
+}
+#chatbox {
+    background-color: rgba(33, 33, 32, 0.80);
+    color: ghostwhite;
+    height: 500px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    width: 100%;
+}
+.msgln {
+    color: ghostwhite;
+    font-size: 50px;
+}
+#date {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#calendarTable{
+    margin-bottom: 10px;
+    maring-left: auto;
+    margin-right: auto;
+}
+.calendarDayHead {
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 13%;
+}
+.calendarNumber {
+    font-size: 20px;
+}
+p.output {
+    font-size: 15px;
+    margin: 0;
+    padding: 0px 2px 5px 5px;
+}
+td.dayOnCalendar {
+    background-color: rgba(33, 33, 32, 0.80);
+    border: 1px solid black;
+    color: white;
+    height: 200px;
+    text-align: left;
+    vertical-align: top;
+}
