@@ -37,7 +37,7 @@
 							break;
 					}
 
-					$formattedTimestamp = date("M d, h:i:s a", strtotime($timestamp));
+					$formattedTimestamp = @date("M d, h:i:s a", @strtotime($timestamp));
 
 					echo "<div id='elderName'>$elderName is...</div>";
 					echo "<div id='status$status'>$statusToString</div>";
@@ -45,9 +45,10 @@
 				?>
 			</div>
 
-			<?php
-			include("Constants/Navigation.php")
-			?>
+			<button class="option" onclick="location.href='chatroom.php'">Chatroom</button>
+			<button class="option" onclick="location.href='calendar.php'">Calendar</button>
+			<button class="option" onclick="location.href='alertSettings.php'">Alert Settings</button>
+			<button class="option" onclick="location.href='Functions/Logout.php'">Log Out</button>
 		</div>
 	</body>
 </html>

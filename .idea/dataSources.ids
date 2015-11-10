@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - capstone@localhost" uuid="fe654f87-d689-4487-9c17-609572d97720">
+    <database-info product="MySQL" version="5.6.27" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="capstone"/>
+      <table id="2" parent="1" name="Family"/>
+      <table id="3" parent="1" name="Users"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="status">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="6" parent="2" name="timestamp">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="7" parent="2" name="Users_elder">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="8" parent="2" name="Users_nk1">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="9" parent="2" name="Users_nk2">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="10" parent="2" name="Users_nk3">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="11" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="12" parent="2" name="family_ibfk_1">
+        <columns>Users_elder</columns>
+        <ref-key>Users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="13" parent="2" name="family_ibfk_2">
+        <columns>Users_nk1</columns>
+        <ref-key>Users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="14" parent="2" name="family_ibfk_3">
+        <columns>Users_nk2</columns>
+        <ref-key>Users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="15" parent="2" name="family_ibfk_4">
+        <columns>Users_nk3</columns>
+        <ref-key>Users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="16" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="3" name="Family_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="18" parent="3" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="19" parent="3" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="20" parent="3" name="firstname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="21" parent="3" name="lastname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="22" parent="3" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="23" parent="3" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+        <default-expression>&apos;Not Set&apos;</default-expression>
+      </column>
+      <column id="24" parent="3" name="textalert">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="25" parent="3" name="emailalert">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="26" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

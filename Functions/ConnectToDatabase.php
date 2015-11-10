@@ -6,9 +6,9 @@
 	 * Time: 1:50 PM
 	 */
 	define("databaseHost", "127.0.0.1");
-	define("databaseName", "csuci");
-	define("databaseUser", "red100");
-	define("databasePassword", "red100");
+	define("databaseName", "capstone");
+	define("databaseUser", "root");
+	define("databasePassword", "");
 
 	$database = new mysqli(databaseHost, databaseUser, databasePassword, databaseName);
 	if ($database->connect_error) {
